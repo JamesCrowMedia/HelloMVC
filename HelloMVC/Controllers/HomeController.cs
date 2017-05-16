@@ -10,7 +10,7 @@ namespace HelloMVC.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return Redirect("/Hello");
         }
 
         public IActionResult About()

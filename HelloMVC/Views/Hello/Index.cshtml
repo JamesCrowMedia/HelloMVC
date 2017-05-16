@@ -1,0 +1,14 @@
+﻿@{
+    
+}
+
+<form method='post'>
+    <input type='text' name='name' value="@ViewBag.name"/>
+    <select name="userLanguage">
+        @foreach(KeyValuePair<string, string> language in ViewBag.languages)
+        {
+            <option value="@language.Key">@language.Key</option>
+        }
+    </select>
+    <input type='submit' value='Greet Me!' />
+</form>
